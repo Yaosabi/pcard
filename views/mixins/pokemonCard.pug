@@ -6,18 +6,12 @@ mixin pokemonCard(pokemon)
                     p=pokemon.health
                     img(src=pokemon.type)
                 div.pokemon-image
-                    img(src='https://www.drawingtutorials101.com/drawing-tutorials/Anime-and-Manga/Pokemon/drifloon/how-to-draw-Drifloon-from-Pokemon-step-0.png')
-                div.edit
-                    a(href=`/edit/${pokemon.id}`) Edit
+                    img(src=pokemon.image)
                 div.pokemon-move
+                    img(src=pokemon.attackOneCost)
+                    img(src=pokemon.attackOneCost2)
                     h1=pokemon.attackOneTitle
-                div.pokmon-move
-                    div.move-cost
-                        img(src=attackOneCost)
-                        img(src=attackOneCost2)
-               div.pokemon-move
-                    h1=pokemon.attackTwoTitle
                 div.pokemon-move
-                    div.move-cost
-                        img(src=attackTwoCost)
-                        img(src=attackTwoCost2)
+                    img(src=pokemon.attackOneCost)
+                    img(src=pokemon.attackOneCost2)
+                    h1=pokemon.attackOneTitle

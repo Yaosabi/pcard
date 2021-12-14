@@ -72,7 +72,7 @@ body {
   -ms-grid-column: 2;
   grid-area: health;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   text-align: right;
   color: red;
 }
@@ -80,44 +80,35 @@ body {
 .title-row img{
   position: absolute;
   right:-4px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .pokemon-image {
   margin: 0 20px;
-  height: 170px;
+  height: 120px;
   border: 5px solid yellow;
   overflow: hidden;
 }
 
 .pokemon-image img {
-  height: 170px;
+  height: 130px;
   width: fit-content;
 }
 
 .pokemon-move {
-  text-align: right;
-  height: 75px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 65px auto 65px;
-  grid-template-columns: 65px auto 65px;
-  gap: 5px;
+  align-content: start;
+  text-align: left;
   margin: 0 10px;
-  border-bottom: 2px solid black;
 }
 
-.pokemon-move .move-cost img {
-  align-self: end;
-  text-align: right;
-  width: 30px;
-}
-.pokemon-move {
-  text-align: right;
+.pokemon-move img{
+  justify-content: start;
+  width:16px;
+  height:16px;
 }
 
 .pokemon-move h1 {
-  text-align: right;
-  font-size: 20px;
+  text-align: left;
+  font-size: 12px;
 }
