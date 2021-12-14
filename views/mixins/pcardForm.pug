@@ -10,11 +10,38 @@ div.form-panel
                 label(for='name') Name:
                 input(type='text' id='name' name='name' value=pokemon.name)
             div.form-input
+                label(for='type') Type:
+                input(type='text' id='type' name='type' value=pokemon.type)
+            div.form-input
+                label(for='health') Health:
+                input(type='text' id='health' name='health' value=pokemon.health)
+            div.form-input
                 label(for='image') Image URL:
                 input(type='text' id='image' name='image' value=pokemon.image)
             div.form-input
-                label(for='description') Description:
-                textarea(id='description' name='description') #{pokemon.describe}
+                label(for='attackOneTitle') Attack One:
+                input(type='text' id='attackOneTitle' name='attackOneTitle')
+            div.form-input
+                label(for='attackOneCost') Attack One Cost:
+                input(type='text' id='attackOneCost' name='attackOneCost')
+            div.form-input
+                label(for='attackOneCost2') Attack One Cost (2):
+                input(type='text' id='attackOneCost2' name='attackOneCost2')
+            div.form-input
+                label(for='attackTwoTitle') Attack Two:
+                input(type='text' id='attackTwoTitle' name='attackTwoTitle')
+            div.form-input
+                label(for='attackTwoCost') Attack Two Cost:
+                input(type='text' id='attackTwoCost' name='attackTwoCost')
+            div.form-input
+                label(for='attackTwoCost2') Attack Two Cost (2):
+                input(type='text' id='attackTwoCost2' name='attackTwoCost2')
+            div.form-input
+                label(for='resistance') Resistance:
+                input(type='text' id='resistance' name='resistance')
+            div.form-input
+                label(for='weakness') Weakness:
+                input(type='text' id='weakness' name='weakness')
             div.button-row
                 a.button.cancel(href='/') Cancel
                 a.button.delete(href=`/delete/${pokemon.id}`) Delete
