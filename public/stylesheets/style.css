@@ -89,11 +89,12 @@ body {
   height: 50px;
 }
 
-.title-row .type {
+.title-row .pokemon-type {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: type;
   width: 100%;
+  padding: 20px;
 }
 
 .pokemon-image {
