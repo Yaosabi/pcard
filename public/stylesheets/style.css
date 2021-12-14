@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 20px;
   margin: 0;
   background: #f3f4f6;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -79,7 +79,8 @@ body {
 
 .title-row img{
   position: absolute;
-  right:-4px;
+  right:-1px;
+  top: 8px;
   width: 40px;
   height: 40px;
 }
@@ -99,7 +100,7 @@ body {
 .pokemon-move {
   align-content: start;
   text-align: left;
-  margin: 0 10px;
+  margin: 0px 10px;
 }
 
 .pokemon-move img{
@@ -111,4 +112,21 @@ body {
 .pokemon-move h1 {
   text-align: left;
   font-size: 12px;
+}
+
+.pokemon-stats{
+  justify-content: center;
+}
+
+.pokemon-stats-text h1{
+  font-size:12px;
+  text-align: center;
+}
+
+.pokemon-resistance {
+  text-align: left;
+}
+
+.pokemon-weakness {
+  text-align: right;
 }
