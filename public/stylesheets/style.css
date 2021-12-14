@@ -130,3 +130,20 @@ body {
 .pokemon-weakness {
   text-align: right;
 }
+
+.pokemon-stats-types img{
+  width:18px;
+  height:18px;
+}
+
+.res {
+  position: absolute;
+  left: 54px;
+  bottom: -2px;
+}
+
+.wek {
+  position: absolute;
+  right: 48px;
+  bottom: -2px;
+}

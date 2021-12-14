@@ -13,9 +13,13 @@ mixin pokemonCard(pokemon)
                     h1=pokemon.attackOneTitle
                 div.pokemon-move
                     img(src=pokemon.attackTwoCost)
-                    img(src=pokemon.TwoCost)
+                    img(src=pokemon.attackTwoCost2)
                     h1=pokemon.attackTwoTitle
                 div.pokemon-stats
                     div.pokemon-stats-text
                         h1 Resistance‏‏‎ ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Weakness
                     div.pokemon-stats-types
+                        div.res
+                            img(src=pokemon.resistance)
+                        div.wek
+                            img(src=pokemon.weakness)
