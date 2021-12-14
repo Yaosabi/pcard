@@ -4,8 +4,7 @@ mixin pokemonCard(pokemon)
                 div.title-row
                     h1=pokemon.name
                     p=pokemon.health
-                    div.pokemon-type
-                        img(src=pokemon.type)
+                    img(src=pokemon.type)
                 div.pokemon-image
                     img(src='https://www.drawingtutorials101.com/drawing-tutorials/Anime-and-Manga/Pokemon/drifloon/how-to-draw-Drifloon-from-Pokemon-step-0.png')
                 div.edit
@@ -16,7 +15,7 @@ mixin pokemonCard(pokemon)
                     div.move-cost
                         img(src=attackOneCost)
                         img(src=attackOneCost2)
-                div.pokemon-move
+               div.pokemon-move
                     h1=pokemon.attackTwoTitle
                 div.pokemon-move
                     div.move-cost

@@ -55,7 +55,7 @@ body {
   grid-template-rows: 15px 25px;
   margin: 5px 20px 0px 20px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
+  -ms-flex-align: center ;
   align-items: center;
   -webkit-column-gap: 5px;
   column-gap: 5px;
@@ -77,24 +77,11 @@ body {
   color: red;
 }
 
-.pokemon-type {
-  text-align: right;
-  justify-content: right;
-}
-
-.pokemon-type img{
-  justify-content: right;
-  align-self: end;
+.title-row img{
+  position: absolute;
+  right:-4px;
   width: 50px;
   height: 50px;
-}
-
-.title-row .pokemon-type {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: type;
-  width: 100%;
-  padding: 20px;
 }
 
 .pokemon-image {
