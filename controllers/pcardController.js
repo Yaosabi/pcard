@@ -1,5 +1,5 @@
 const{Pokemon} = require('../models');
-const categories = ['Lightning'];
+const categories = ['Normal','Fighting','Flying','Poison','Ground','Rock','Bug','Ghost','Steel','Fire','Water','Grass','Electric','Psychic','Ice','Dragon','Dark','Fairy'];
 
 module.exports.viewAll = async function(req, res) {
     let searchCategories = ['All'];
@@ -18,7 +18,12 @@ module.exports.viewAll = async function(req, res) {
             }
         });
     }
-
+    if(pokemons.length > 0 && searchRandom){
+        let randomIndex = getRandomInt(pokemons.length);
+        pokemons = [pokemons[randomIndex]];
+    }
+    res.render('index', {pokemons, categories:searchCategories, searchCategory, searchRandom}); //changed
+}
 
     module.exports.renderEditForm = async function (req, res) {
         const Pokemon = await Pokemon.findByPk(
@@ -86,5 +91,8 @@ module.exports.viewAll = async function(req, res) {
                 image: req.body.image
             });
         res.redirect('/')
-    }
+}
+
+function getRandomInt(max){
+    return Math.floor(Math.random() * max);
 }

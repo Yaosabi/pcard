@@ -2,30 +2,4 @@ extends layout
 
 block content
     include mixins/pcardForm
-    +pcardForm(pokemon, `/edit/${pokemon.id}`, 'edit', 'Edit Restaurant')
-    div.form-panel
-        div.header  Edit Restaurant
-            form(action=`/edit/${pcard.id}` method='post')
-                div.form-input
-                    label(for='name') Name:
-                    input(type='text' id='name' name='name' value=pokemon.name)
-                div.form-input
-                    label(for='category') Category
-                    select(id='category' name='category=' autocomplete='off')
-                        each category in categories
-                            option(value=category selected = (category ===pokemon.category)) #{category}
-                div.form-input
-                    label(for='rating') Rating
-                    select(id='rating' name='rating' autocomplete='off')
-                        -for(let i = 1; i<= 5; i++)
-                            option(value=i selected = (rating === pokemon.rating)) #{i}
-                div.form-input
-                    label(for='image') Image URL:
-                    input(type='text' id='image' name='image' value=pokemon.image)
-                div.form-input
-                    label(for='description') Description:
-                    textarea(id='description' name='description') #{pokemon.describe}
-                div.button-row
-                    a.button.cancel(href='/') Cancel
-                    a.button.delete(href=`/delete/${pokemon.id}`) Delete
-                    button.button.save(type='submit') Submit
+    +pcardForm(pokemon, `/edit/${pokemon.id}`, 'edit', 'Edit Pokemon')

@@ -18,9 +18,11 @@ module.exports = (sequelize, DataTypes) => {
     type:DataTypes.STRING,
     health:DataTypes.INTEGER,
     attackOneTitle:DataTypes.STRING,
-    attackOneCost:DataTypes.INTEGER,
+    attackOneCost:DataTypes.STRING,
+    attackOneCost2:DataTypes.STRING,
     attackTwoTitle:DataTypes.STRING,
-    attackTwoCost:DataTypes.INTEGER,
+    attackTwoCost:DataTypes.STRING,
+    attackTwoCost2:DataTypes.STRING,
     image: DataTypes.STRING
   }, {
     sequelize,

@@ -1,10 +1,21 @@
-mixin pcardForm(pokemon, mode, title)
+mixin pcardForm(pokemon, actionURL, mode, title)
 
     div.form-panel
         div.header= title
             form(action=actionURL method='post')
-                div.button-row
-                    a.button.cancel(href='/') Cancel
-                    if(mode==='edit')
-                        a.button.delete(href=`/delete/${pokemon.id}`) Delete
-                    button.button.save(type='submit') Submit
+div.form-panel
+    div.header  Edit Pokemon
+        form(action=`/edit/${pokemon.id}` method='post')
+            div.form-input
+                label(for='name') Name:
+                input(type='text' id='name' name='name' value=pokemon.name)
+            div.form-input
+                label(for='image') Image URL:
+                input(type='text' id='image' name='image' value=pokemon.image)
+            div.form-input
+                label(for='description') Description:
+                textarea(id='description' name='description') #{pokemon.describe}
+            div.button-row
+                a.button.cancel(href='/') Cancel
+                a.button.delete(href=`/delete/${pokemon.id}`) Delete
+                button.button.save(type='submit') Submit

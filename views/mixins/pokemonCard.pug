@@ -1,16 +1,24 @@
 mixin pokemonCard(pokemon)
 
-            div.card
-                div.card-header
-                    div.backdrop
-                    div.card-title=pokemon.name
-                    img.card-header-image(src=pokemon.image)
-                div.card-body
-                    div.edit
-                        a(href=`/edit/${pokemon.id}`) Edit
-                    div.card-details
-                        div.category= pokemon.category
-                        div.rating
-                            -for (let i = 0; i < pokemon.rating; i++)
-                            span &#X2b50;
-                    div.description=pokemon.description
+            div.pokemon-card
+                div.title-row
+                    h1=pokemon.name
+                    p=pokemon.health
+                    div.pokemon-type
+                        img(src=pokemon.type)
+                div.pokemon-image
+                    img(src='https://www.drawingtutorials101.com/drawing-tutorials/Anime-and-Manga/Pokemon/drifloon/how-to-draw-Drifloon-from-Pokemon-step-0.png')
+                div.edit
+                    a(href=`/edit/${pokemon.id}`) Edit
+                div.pokemon-move
+                    h1=pokemon.attackOneTitle
+                div.pokmon-move
+                    div.move-cost
+                        img(src=attackOneCost)
+                        img(src=attackOneCost2)
+                div.pokemon-move
+                    h1=pokemon.attackTwoTitle
+                div.pokemon-move
+                    div.move-cost
+                        img(src=attackTwoCost)
+                        img(src=attackTwoCost2)
