@@ -23,7 +23,9 @@ module.exports = (sequelize, DataTypes) => {
     attackTwoTitle:DataTypes.STRING,
     attackTwoCost:DataTypes.STRING,
     attackTwoCost2:DataTypes.STRING,
-    image: DataTypes.STRING
+    image: DataTypes.STRING,
+    resistance: DataTypes.STRING,
+    weakness: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Pokemon',

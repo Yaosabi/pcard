@@ -123,10 +123,26 @@ body {
   text-align: center;
 }
 
-.pokemon-resistance {
+.pokemon-resistance img{
   text-align: left;
+  width: 16px;
+  height: 16px;
 }
 
-.pokemon-weakness {
+.pokemon-weakness img{
   text-align: right;
+  width: 16px;
+  height: 16px;
+}
+
+.pokemon-weakness{
+  position: absolute;
+  right: 48px;
+  bottom: -2px;
+}
+
+.pokemon-resistance{
+  position: absolute;
+  left: 54px;
+  bottom: -2px;
 }
