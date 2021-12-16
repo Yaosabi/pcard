@@ -1,5 +1,5 @@
 mixin pokemonCard(pokemon)
-
+        div.card-area
             div.pokemon-card
                 div.title-row
                     h1=pokemon.name
@@ -18,7 +18,8 @@ mixin pokemonCard(pokemon)
                 div.pokemon-stats
                     div.pokemon-stats-text
                         h1 Resistance‏‏‎ ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Weakness
-                    div.pokemon-resistance
-                        img(src=pokemon.resistance)
-                    div.pokemon-weakness
-                        img(src=pokemon.weakness)
+                    div.pokemon-stats-types
+                        div.res
+                            img(src=pokemon.resistance)
+                        div.wek
+                            img(src=pokemon.weakness)
