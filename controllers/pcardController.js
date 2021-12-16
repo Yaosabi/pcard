@@ -26,10 +26,10 @@ module.exports.viewAll = async function(req, res) {
 }
 
     module.exports.renderEditForm = async function (req, res) {
-        const Pokemon = await Pokemon.findByPk(
+        const pokemon = await Pokemon.findByPk(
             req.params.id
         );
-        res.render('edit', {Pokemon, categories});
+        res.render('edit', {pokemon, categories});
     }
 
     module.exports.updatePokemon = async function (req, res) {
@@ -39,10 +39,13 @@ module.exports.viewAll = async function(req, res) {
                 type: req.body.type,
                 health: req.body.health,
                 attackOneTitle: req.body.attackOneTitle,
-                attackOneCost: req.body.attackOneCost,
+                attackOneCost2: req.body.attackOneCost2,
                 attackTwoTitle: req.body.attackTwoTitle,
                 attackTwoCost: req.body.attackTwoCost,
-                image: req.body.image
+                attackTwoCost2: req.body.attackTwoCost2,
+                image: req.body.image,
+                resistance: req.body.resistance,
+                weakness: req.body.weakness
             },
             {
                 where:
@@ -68,12 +71,15 @@ module.exports.viewAll = async function(req, res) {
         const pokemon = {
             name: "",
             type: "",
-            health: 60,
+            health: "",
             attackOneTitle: "",
-            attackOneCost: 2,
+            attackOneCost2: "",
             attackTwoTitle: "",
-            attackTwoCost: 2,
+            attackTwoCost: "",
+            attackTwoCost2: "",
             image: "",
+            resistance: "",
+            weakness: ""
         };
         res.render('add', {pokemon, categories});
     }
