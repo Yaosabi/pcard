@@ -6,5 +6,13 @@ block content
     div.add-button-row
       a.button.save(href='/add') Add Pokemon
   div.container
+    form(action='/' method='get')
+      button.button.save(type='submit') Filter
+      div.form-input
+        label(for='random') Random
+        input(type='checkbox' name='random' id='random' checked=searchRandom)
+  div.container
     each pokemon in pokemons
       +pokemonCard(pokemon)
+
+
