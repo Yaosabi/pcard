@@ -7,6 +7,8 @@ mixin pokemonCard(pokemon)
                     img(src=pokemon.type)
                 div.pokemon-image
                     img(src=pokemon.image)
+                div.edit
+                    a(href=`/edit/${pokemon.id}`) Edit
                 div.pokemon-move
                     img(src=pokemon.attackOneCost)
                     img(src=pokemon.attackOneCost2)

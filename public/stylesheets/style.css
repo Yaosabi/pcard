@@ -146,3 +146,16 @@ body {
   right: 48px;
   bottom: -2px;
 }
+
+.edit {
+  position: absolute;
+  right: 40px;
+  top:200px;
+}
+
+a:link {
+  color: red;
+}
+a:visited {
+  color: red;
+}
