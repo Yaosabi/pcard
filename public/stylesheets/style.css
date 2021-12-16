@@ -3,16 +3,12 @@ body {
   margin: 0;
   background: #f3f4f6;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+}
+.container {
+  padding: 8px;
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
 }
 
 .pokemon-card {
@@ -75,6 +71,9 @@ body {
   font-size: 17px;
   text-align: right;
   color: red;
+  position: absolute;
+  right:80px;
+  top: -50px;
 }
 
 .title-row img{
