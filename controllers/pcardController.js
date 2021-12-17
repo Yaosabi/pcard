@@ -32,7 +32,7 @@ module.exports.viewAll = async function(req, res) {
         res.render('edit', {pokemon, categories});
     }
 
-    module.exports.updatePokemon = async function (req, res) {
+    module.exports.updatePokemon = async function (req,res) {
         await Pokemon.update(
             {
                 name: req.body.name,
@@ -81,7 +81,7 @@ module.exports.viewAll = async function(req, res) {
             resistance: "",
             weakness: ""
         };
-        res.render('add', {pokemon, categories});
+        res.render('add', {pokemon});
     }
 
     module.exports.addPokemon = async function (req, res) {
@@ -92,9 +92,13 @@ module.exports.viewAll = async function(req, res) {
                 health: req.body.health,
                 attackOneTitle: req.body.attackOneTitle,
                 attackOneCost: req.body.attackOneCost,
+                attackOneCost2: req.body.attackOneCost2,
                 attackTwoTitle: req.body.attackTwoTitle,
                 attackTwoCost: req.body.attackTwoCost,
-                image: req.body.image
+                attackTwoCost2: req.body.attackTwoCost,
+                image: req.body.image,
+                resistance: req.body.resistance,
+                weakness: req.body.resistance
             });
         res.redirect('/')
 }
