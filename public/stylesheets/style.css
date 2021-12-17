@@ -22,8 +22,8 @@ body {
   border: 15px solid #e7c30d;
   overflow: hidden;
   font-family: arial, sans-serif;
-  -webkit-box-shadow: 20px 12px 20px 0px black;
-  box-shadow: 20px 12px 20px 0px black;
+  -webkit-box-shadow: 20px 6px 10px 0px black;
+  box-shadow: 10px 6px 20px 0px black;
   position: relative;
 }
 
